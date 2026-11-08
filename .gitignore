@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Checkpoints and caches (large binary files)
+ckpt.pt
+*.pt
+tokens_*.pt
+
+# Data (downloadable, see README)
+input.txt
+shakespeare_complete_pg100.txt
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
