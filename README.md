@@ -10,10 +10,10 @@ Trained on 5.2 MB of Shakespeare , 3000-token BPE vocabulary,
 
 | step | train loss | val loss | BPC (bits/char) |
 |------|-----------|----------|-----------------|
-| 0    | 7.34      | 7.44     | 3.46            |
-| 1000 | 3.96      | 4.40     | 2.05            |
-| 2500 | 3.28      | 4.05     | 1.88            |
-| 4500 | 2.88      | 3.93     | 1.83            |
+| 0    | 7.42      | 7.49     | 3.49            |
+| 1000 | 3.97      | 4.40     | 2.05            |
+| 2500 | 3.26      | 4.03     | 1.88            |
+| 4500 | 3.04      | 3.94     | 1.83            |
 
 **BPC = val_loss × tokens_per_char / ln(2)**, with `tokens_per_char = 0.3226`.
 During the process, I learned that:
@@ -24,33 +24,59 @@ For reference, a character-level model (vocab 65) on the same text reaches
 val 1.47 → BPC 2.12. The subword model is better at the same information measure.
 
 ### Sample output(prompt:"SCENE I")
-SCENE I. Troy. A street.
+SCENE I.
 
- Enter the Gentleman.
+Enter Lord Messala, Officers, Oswald, Fairy and Attendants.
 
-FIRST GENTLEMAN.
-Can you me, madam?
+ARCHBISHOP.
+My gracious lords, I have seen this deed.
 
-FIRST GENTLEMAN.
-No, not that. How now?
+QUEEN ELIZABETH.
+If you were born, my liege, I fear you now.
+Now I am here in my house,
+And I, for my sake, and all this world.
 
-SECOND GENTLEMAN.
-Marry, for the King.
+WILLIAM.
+This is my father’s wrong.
 
-BAWD.
-I have heard him speak a word.
+KING RICHARD.
+O, how chance he?
 
-FIRST GENTLEMAN.
-Yes, sir, very well; for I know not what;
-But if you did believe him, what of him?
+QUEEN ELIZABETH.
+What page to my father’s love?
 
-FIRST GENTLEMAN.
-Marry, sir, and the greatest soldier
-Did not perform him again.
+QUEEN ELIZABETH.
+I will not send some care of you.
 
-FIRST GENTLEMAN.
-A mile
-To be as a king and his honour.
+KING RICHARD.
+What, what? Will you not, with all my heart?
+
+STANLEY.
+Neither, my good lord.
+
+QUEEN ELIZABETH.
+Yes, there’s my brother’s death, that I must.
+
+QUEEN ELIZABETH.
+Servants, and I’ll use some other of them.
+
+KING RICHARD.
+This is my father’s name.
+
+QUEEN ELIZABETH.
+Why, what a woman?
+
+KING RICHARD.
+I see, my lord, I did not speak to thee.
+
+DUCHESS.
+Why, why? Grey?
+
+KING RICHARD.
+Why, madam, is the Queen of Richard?
+
+QUEEN ELIZABETH.
+Ay, madam, if I were at, I was my father.
 ## Quick start
 
 ```bash
